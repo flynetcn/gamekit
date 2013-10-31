@@ -35,6 +35,12 @@ public:
     virtual void draw(Graphics* graphics);
 
     virtual void init(unsigned char* data,int size,int width,int height,const BitmapFormat format) = 0;
+
+    virtual int getWidth();
+
+    virtual int getHeight();
+
+    virtual BitmapFormat getFormat();
 };
 
 

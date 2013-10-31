@@ -19,6 +19,8 @@
 #ifndef _FILE_SYSTEM_H
 #define _FILE_SYSTEM_H
 
+#include "Array.h"
+
 class File;
 
 class FileSystem{
@@ -36,6 +38,8 @@ public:
     virtual bool create(File* file) = 0;
 
     virtual bool remove(File* file) = 0;
+
+    virtual Array<Handler<File>> listFiles(File* file) = 0;
 };
 
 

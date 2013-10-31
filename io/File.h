@@ -50,6 +50,8 @@ public:
     bool create();    
 
     bool remove();
+
+    Array<Handler<File>> listFiles();
 };
 
 
